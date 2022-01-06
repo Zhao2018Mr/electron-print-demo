@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/print.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="rainbow-button-wrapper">
+      <button id="openPrintgt800" class="about-button modal-hide"> webcontent</button>
+    </div>
+    <div class="rainbow-button-wrapper">
+      <button id="openPrintwebView" class="about-button modal-hide"> webview</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <webview id="printWebview" src="./sections/print/print2.html" nodeintegration style="visibility: hidden"></webview>
+  </div>
+
+  <script>
+    require('./renderer-process/print/index')
+  </script>
+</body>
+
+</html>
